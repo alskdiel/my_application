@@ -1,3 +1,12 @@
 // Place all the styles related to the cover_letters controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+table.cover-letter-index {
+  margin-bottom: 40px;
+
+  tr.question {
+    height: 50px;
+    font-weight: bold;
+  }
+}

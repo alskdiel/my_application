@@ -2,7 +2,19 @@
 
 <p>
   <strong>Type:</strong>
-  <%= @my_application.apply_type %>
+  <% if @my_application.apply_type == 0 %>
+    <%= "서류전형" %>
+  <% elsif @my_application.apply_type == 1 %>
+    <%= "필기전형" %>
+  <% elsif @my_application.apply_type == 2 %>
+    <%= "인적성" %>
+  <% elsif @my_application.apply_type == 3 %>
+    <%= "1차면접" %>
+  <% elsif @my_application.apply_type == 4 %>
+    <%= "2차면접" %>
+  <% elsif @my_application.apply_type == 5 %>
+    <%= "3차면접" %>
+  <% end %>
 </p>
 
 <p>

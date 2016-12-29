@@ -2,26 +2,22 @@
 
 <h1>Listing Cover Letters</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Question</th>
-      <th>Answer</th>
-      <th colspan="2"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @cover_letters.each do |cover_letter| %>
-      <tr>
+<% @cover_letters.each do |cover_letter| %>
+  <table class="cover-letter-index">
+    <tbody>
+      <tr class="question">
         <td><%= cover_letter.question %></td>
-        <td><%= cover_letter.answer %></td>
-        <td><%= link_to 'Edit', edit_cover_letter_path(cover_letter) %></td>
-        <td><%= link_to 'Destroy', cover_letter, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+      <tr>
+        <td><%= cover_letter.answer %></td>
+      </tr>
+      <tr>
+        <td><%= link_to 'Edit', edit_cover_letter_path(cover_letter) %>
+        <%= link_to 'Destroy', cover_letter, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    </tbody>
+  </table>
+<% end %>
 
 <br>
 
