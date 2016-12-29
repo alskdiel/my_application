@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: 1
+  company: MyString
+  applied_date: 2016-12-25 16:03:39
+  released_date: 2016-12-25 16:03:39
+  result: false
+
+two:
+  type: 1
+  company: MyString
+  applied_date: 2016-12-25 16:03:39
+  released_date: 2016-12-25 16:03:39
+  result: false

@@ -1,0 +1,21 @@
+// Place all the styles related to the my_applications controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.table-index {
+  text-align: center;
+  tr {
+    .small {
+      width: 100px;
+    }
+    .medium {
+      width: 200px;
+    }
+    .large {
+      width: 300px;
+    }
+    .extra-large {
+      width: 400px;
+    }
+  }
+}

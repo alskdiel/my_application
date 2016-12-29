@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @my_application.apply_type %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @my_application.company %>
+</p>
+
+<p>
+  <strong>Applied date:</strong>
+  <%= @my_application.applied_date %>
+</p>
+
+<p>
+  <strong>Released date:</strong>
+  <%= @my_application.released_date %>
+</p>
+
+<p>
+  <strong>Result:</strong>
+  <%= @my_application.result %>
+</p>
+
+<%= link_to 'Edit', edit_my_application_path(@my_application) %> |
+<%= link_to 'Back', my_applications_path %>

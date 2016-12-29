@@ -1,0 +1,28 @@
+<%= form_for(@cover_letter) do |f| %>
+  <% if @cover_letter.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cover_letter.errors.count, "error") %> prohibited this cover_letter from being saved:</h2>
+
+      <ul>
+      <% @cover_letter.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.hidden_field :my_application_id, :value => @application_id %>
+  </div>
+  <div class="field">
+    <%= f.label :question %><br>
+    <%= f.text_area :question %>
+  </div>
+  <div class="field">
+    <%= f.label :answer %><br>
+    <%= f.text_area :answer %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

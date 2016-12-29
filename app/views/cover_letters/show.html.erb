@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id application:</strong>
+  <%= @cover_letter.my_application_id %>
+</p>
+
+<p>
+  <strong>Question:</strong>
+  <%= @cover_letter.question %>
+</p>
+
+<p>
+  <strong>Answer:</strong>
+  <%= @cover_letter.answer %>
+</p>
+
+<%= link_to 'Edit', edit_cover_letter_path(@cover_letter) %> |
+<%= link_to 'Back', cover_letters_path %>

@@ -1,0 +1,1 @@
+json.array! @my_applications, partial: 'my_applications/my_application', as: :my_application
