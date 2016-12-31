@@ -1,2 +1,22 @@
 $(document).ready(function(){
+  $(document).on('submit', function(){
+    if(!$('#cb_apply_type').val()){
+      $('#my_application_apply_type').val(null);
+    }
+    if(!$('#cb_company').val()){
+      $('#my_application_company').val(null);
+    }
+    if(!$('#cb_position').val()){
+      $('#my_application_position').val(null);
+    }
+    if(!$('#cb_applied_date').val()){
+      $('#my_application_applied_date').val(null);
+    }
+    if(!$('#cb_released_date').val()){
+      $('#my_application_released_date').val(null);
+    }
+    if(!$('#cb_result').val()){
+      $('#my_application_result').val(null);
+    }
+  });
 });

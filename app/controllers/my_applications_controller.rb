@@ -16,12 +16,10 @@ class MyApplicationsController < ApplicationController
   # GET /my_applications/new
   def new
     @my_application = MyApplication.new
-    @isNew = true
   end
 
   # GET /my_applications/1/edit
   def edit
-    @isNew = false
   end
 
   # POST /my_applications
