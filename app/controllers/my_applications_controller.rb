@@ -72,6 +72,6 @@ class MyApplicationsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def my_application_params
-      params.require(:my_application).permit(:apply_type, :company, :applied_date, :released_date, :result)
+      params.require(:my_application).permit(:apply_type, :company, :position, :applied_date, :released_date, :result)
     end
 end

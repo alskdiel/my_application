@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161225070339) do
+ActiveRecord::Schema.define(version: 20161231080118) do
 
   create_table "cover_letters", force: :cascade do |t|
     t.integer  "my_application_id"
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 20161225070339) do
     t.boolean  "result"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
+    t.string   "position"
   end
 
 end
