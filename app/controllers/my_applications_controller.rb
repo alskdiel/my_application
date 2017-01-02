@@ -43,6 +43,9 @@ class MyApplicationsController < ApplicationController
   def update
     respond_to do |format|
       if @my_application.update(my_application_params)
+        if params[:notrdy] == "on"
+          @my_application.update(released_date: nil, result: nil)
+        end
         format.html { redirect_to @my_application, notice: 'My application was successfully updated.' }
         format.json { render :show, status: :ok, location: @my_application }
       else
@@ -70,6 +73,10 @@ class MyApplicationsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def my_application_params
-      params.require(:my_application).permit(:apply_type, :company, :position, :applied_date, :released_date, :result)
+      if params[:notrdy] == "on"
+        params.require(:my_application).permit(:apply_type, :company, :position, :applied_date, nil, nil)
+      else
+        params.require(:my_application).permit(:apply_type, :company, :position, :applied_date, :released_date, :result)
+      end
     end
 end

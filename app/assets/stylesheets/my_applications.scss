@@ -20,8 +20,11 @@
   }
 }
 
-div.field {
-  .component_wrapper {
+.submit-wrapper {
+  .actions {
+    display: inline-block;
+  }
+  #cb-ifnotrdy {
     display: inline-block;
   }
 }

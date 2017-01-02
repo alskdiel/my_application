@@ -12,53 +12,55 @@
   <% end %>
 
   <div class="field">
-    <div class="component_wrapper">
+    <div class="component-wrapper">
       <%= f.label :apply_type %><br>
       <%= f.select :apply_type, [["서류전형", 0], ["필기전형", 1], ["인적성", 2], ["1차 면접", 3], ["2차 면접", 4], ["3차 면접", 5]]%>
-    <input type="checkbox" id="cb_apply_type"/>
+    <!-- <input type="checkbox" id="cb_apply_type"/> -->
     </div>
   </div>
   <div class="field">
-    <div class="component_wrapper">
+    <div class="component-wrapper">
       <%= f.label :company %><br>
       <%= f.text_field :company %>
-    <input type="checkbox" id="cb_company"/>
+    <!-- <input type="checkbox" id="cb_company"/> -->
     </div>
   </div>
 
   <div class="field">
-    <div class="component_wrapper">
+    <div class="component-wrapper">
       <%= f.label :position%><br>
       <%= f.text_field :position%>
-    <input type="checkbox" id="cb_position"/>
+    <!-- <input type="checkbox" id="cb_position"/> -->
     </div>
   </div>
 
   <div class="field">
-    <div class="component_wrapper">
+    <div class="component-wrapper">
       <%= f.label :applied_date %><br>
       <%= f.datetime_select :applied_date %>
-    <input type="checkbox" id="cb_applied_date"/>
+    <!-- <input type="checkbox" id="cb_applied_date"/> -->
     </div>
   </div>
 
   <div class="field">
-    <div class="component_wrapper">
+    <div class="component-wrapper">
       <%= f.label :released_date %><br>
       <%= f.datetime_select :released_date %>
-    <input type="checkbox" id="cb_released_date"/>
+    <!-- <input type="checkbox" id="cb_released_date"/> -->
     </div>
   </div>
 
   <div class="field">
-    <div class="component_wrapper">
+    <div class="component-wrapper">
       <%= f.label :result %><br>
       <%= f.check_box :result %>
-    <input type="checkbox" id="cb_result"/>
     </div>
   </div>
 
-  <div class="actions">
-    <%= f.submit %>
+  <div class="submit-wrapper">
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+    <input type="checkbox" id="cb-ifnotrdy" name="notrdy"/>
   </div>
 <% end %>
