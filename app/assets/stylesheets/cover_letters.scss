@@ -5,8 +5,13 @@
 table.cover-letter-index {
   margin-bottom: 40px;
 
-  tr.question {
-    height: 50px;
-    font-weight: bold;
+  tr {
+    &.question {
+      height: 50px;
+      font-weight: bold;
+    }
+    td.cl-content {
+      white-space: pre-wrap;
+    }
   }
 }
